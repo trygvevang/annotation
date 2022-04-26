@@ -6,7 +6,6 @@ import { Observation } from "./types";
 
 function App() {
   const [data, setData] = useState<Observation[]>();
-  const [indices, setIndices] = useState<number[]>([0, 1, 2]);
 
   return (
     <div className="App">
@@ -17,10 +16,7 @@ function App() {
             <UploadFile setData={setData} />
           </>
         )}
-        {!indices && <></>}
-        {data && indices && (
-          <Observations observations={data.filter((_, i) => i in indices)} />
-        )}
+        {data && <Observations observations={data} />}
       </header>
     </div>
   );
