@@ -1,0 +1,29 @@
+.message {
+  margin-bottom: 50px;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.categories {
+  list-style-type: none;
+  text-align: left;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+
+  > li {
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    &:hover {
+      border: 1px solid #3bb035 !important;
+    }
+  }
+
+  &-selected {
+    border: 1px solid #3bb035 !important;
+    border-radius: 10px;
+  }
+}
