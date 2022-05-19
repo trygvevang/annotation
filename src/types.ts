@@ -15,6 +15,7 @@ export const LABELS = [
   "Reiseopplevelse / Ombord på toget",
   "Billettkontroll",
   "Usikker / Annet",
+  "Filtrer ut",
 ] as const;
 
 export type Label = typeof LABELS[number];
