@@ -14,6 +14,7 @@ export const LABELS = [
   "Reiseplanlegging / Reisesøk",
   "Reiseopplevelse / Ombord på toget",
   "Billettkontroll",
+  "App",
   "Usikker / Annet",
   "Filtrer ut",
 ] as const;
