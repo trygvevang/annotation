@@ -57,7 +57,7 @@ export const Observations: FC<Props> = ({ observations }) => {
         </>
       )}
       <p>Progress: {(currentIndexToLabel / observations.length) * 100} %</p>
-      {isFinished && <DownloadFile annotations={annotations} />}
+      <DownloadFile annotations={annotations} />
     </>
   );
 };
